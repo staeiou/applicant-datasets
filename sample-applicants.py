@@ -10,7 +10,7 @@
 import names
 import numpy
 
-num_candidates = 300
+num_applicants = 300
 
 gender_categories = ['male','female','']
 gender_probability = [.33,.66,.01]
@@ -27,7 +27,7 @@ subfield_probability = [.1,.5,.2,.1,.1]
 print("name, gender, career_stage, country, subfield")
 
 
-for count in range(num_candidates):
+for count in range(num_applicants):
     
     c_gender = numpy.random.choice(gender_categories, p=gender_probability)
     c_full_name = names.get_full_name(gender=c_gender)
